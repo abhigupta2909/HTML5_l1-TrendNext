@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<section>
+		<h1>Awesome online videos</h1>
+		<img src="./video-logo.png">
+	</section>
+	<section>
+		<video id="videos" width="400">
+  			<source src="samplevideo.mp4" type="video/mp4">
+  			<source src="samplevideo.ogg" type="video/ogg">
+  			Your browser does not support HTML5 video.
+		</video>
+		<button onclick="play()">Play</button>
+		<button onclick="pause()">Pause</button>
+	</section>
+	<script> 
+		let myVideo = document.getElementById("videos"); 
+		function play() { 
+    		if (myVideo.paused) 
+        		myVideo.play(); 
+    	}
+    	function pause() {
+        	myVideo.pause(); 
+		} 
+	</script>
+</body>
+</html>
